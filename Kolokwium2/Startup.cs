@@ -27,7 +27,7 @@ namespace Kolokwium2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IDbService, DbService>();
+            services.AddTransient<ISqlServerDbService, SqlServerDbService>();
             services.AddDbContext<s18923Context>(options =>
             {
                 options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s18923;Integrated Security=True");

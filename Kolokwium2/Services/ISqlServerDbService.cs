@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Kolokwium2.Services
 {
-    public interface IDbService
+    public interface ISqlServerDbService
     {
         public List<TeamResponse> GetChampionshipInfo(int Id);
 

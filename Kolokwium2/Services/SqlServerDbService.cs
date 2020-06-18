@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace Kolokwium2.Services
 {
-    public class DbService : IDbService
+    public class SqlServerDbService : ISqlServerDbService
     {
         s18923Context context;
-        public DbService(s18923Context context)
+        public SqlServerDbService(s18923Context context)
         {
             this.context = context;
         }

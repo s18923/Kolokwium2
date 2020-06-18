@@ -13,8 +13,8 @@ namespace Kolokwium2.Controllers
     [ApiController]
     public class TeamsController : ControllerBase
     {
-        IDbService service;
-        public TeamsController(IDbService service)
+        ISqlServerDbService service;
+        public TeamsController(ISqlServerDbService service)
         {
             this.service = service;
         }

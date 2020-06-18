@@ -11,8 +11,8 @@ namespace Kolokwium2.Controllers
     [ApiController]
     public class ChampionshipController : ControllerBase
     {
-        IDbService service;
-        public ChampionshipController(IDbService service)
+        ISqlServerDbService service;
+        public ChampionshipController(ISqlServerDbService service)
         {
             this.service = service;
         }
