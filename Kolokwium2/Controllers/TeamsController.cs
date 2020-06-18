@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Kolokwium2.Controllers
 {
-    [Route("api/championship")]
+    [Route("api/teams")]
     [ApiController]
     public class TeamsController : ControllerBase
     {
